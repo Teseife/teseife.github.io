@@ -33,6 +33,11 @@ app = Flask(__name__)
 
 # conn parameters replaced by 'render' environmental variables that hold the conditionals for the db connection.
 
+host = "localhost"
+user = "root"
+password = "abc1234"
+database = "finalproject"
+
 conn = mysql.connector.connect(host=host, user=user, password=password, database=database)
 
 # Load data into DataFrames
